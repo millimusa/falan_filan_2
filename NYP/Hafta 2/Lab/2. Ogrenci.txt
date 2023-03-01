@@ -1,0 +1,22 @@
+
+public class Ogrenci {
+
+	public String ogrenciIsim;
+	public int ogrenciNo;
+	public int ogrenciYas;
+	
+	
+	public void OgrenciBilgiYazdir()
+	{
+		System.out.println(this.ogrenciNo + " numarali ogrencinin" +
+				" ismi " + this.ogrenciIsim + " ve Yasi: " +
+				this.ogrenciYas);
+	}
+	
+	public void OgrenciBilgiYazdirFormatli()
+	{
+		System.out.println("Ogrencinin Ismi: " + this.ogrenciIsim);
+		System.out.println("Ogrencinin Numarasi: " + this.ogrenciNo);
+		System.out.println("Ogrencinin Yasi: " + this.ogrenciYas);
+	}
+}

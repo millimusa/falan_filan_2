@@ -1,0 +1,21 @@
+
+public class AnaSinif {
+
+	public static void main(String[] args) {
+		
+		Ogrenci ogr1 = new Ogrenci();
+		Ogrenci ogr2 = new Ogrenci();
+		
+		ogr1.ogrenciIsim = "Ahmet Yildiz";
+		ogr1.ogrenciNo = 1071;
+		ogr1.ogrenciYas = 22;
+		
+		ogr2.ogrenciIsim = "Ayse Turk";
+		ogr2.ogrenciNo = 1453;
+		ogr2.ogrenciYas = 23;
+		
+		ogr1.OgrenciBilgiYazdir();
+		ogr2.OgrenciBilgiYazdirFormatli();
+
+	}
+}
