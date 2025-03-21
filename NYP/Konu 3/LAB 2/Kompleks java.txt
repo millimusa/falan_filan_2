@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Kompleks
+{
+	public double reel;
+	public double sanal;
+	
+	Scanner girdi = new Scanner(System.in);
+	
+	public Kompleks()
+	{
+		
+	}
+	
+	public Kompleks(double reel, double sanal)
+	{
+		this.reel = reel;
+		this.sanal = sanal;
+	}
+	
+	public void KompleksSayiAl()
+	{
+		System.out.println("Sayinin Reel Kismini Girin: ");
+		this.reel = girdi.nextDouble();
+		System.out.println("Sayinin Sanal Kismini Girin: ");
+		this.sanal = girdi.nextDouble();
+	}
+	
+	public void KompleksYazdir()
+	{
+		if(this.sanal >= 0)
+			System.out.println(this.reel + " + " + this.sanal
+					+ "i");
+		else
+			System.out.println(this.reel + " " + this.sanal + "i");
+	}
+	
+	public static Kompleks KompleksTopla(Kompleks c1, Kompleks c2)
+	{
+		Kompleks toplam = new Kompleks();
+		
+		toplam.reel = c1.reel + c2.reel;
+		toplam.sanal = c1.sanal + c2.sanal;
+		
+		return toplam;
+	}
+	
+	public static Kompleks KompleksCikar(Kompleks c1, Kompleks c2)
+	{
+		Kompleks fark = new Kompleks();
+		
+		fark.reel = c1.reel - c2.reel;
+		fark.sanal = c1.sanal - c2.sanal;
+		
+		return fark;
+	}
+}
+
+
+
+
+
+
+
+

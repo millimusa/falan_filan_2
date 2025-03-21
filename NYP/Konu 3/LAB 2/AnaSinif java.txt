@@ -1,0 +1,22 @@
+
+public class AnaSinif
+{	
+	
+	public static void main(String[] args)
+	{
+		Kompleks sayi1 = new Kompleks();
+		Kompleks sayi2 = new Kompleks(4,5);
+		Kompleks toplam = new Kompleks();
+		Kompleks fark = new Kompleks();
+		
+		sayi1.KompleksSayiAl();
+		
+		toplam = Kompleks.KompleksTopla(sayi1, sayi2);
+		fark = Kompleks.KompleksCikar(sayi1, sayi2);
+		
+		toplam.KompleksYazdir();
+		fark.KompleksYazdir();
+
+	}
+
+}

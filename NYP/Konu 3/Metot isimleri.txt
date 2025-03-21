@@ -1,0 +1,5 @@
+set.....	--> set edecek yani değiştirecek. Yazma.
+get.....	--> get edecek yani değerini getirecek. Okuma.
+to......	--> Convert edecek yani dönüştürecek. Büyük bir ihtimalle verinin tipini
+......At	--> Parametre olrak gelen konumdakini getir, ...
+is......	--> sorgu. isNumeric gibi. True/False değer döner.

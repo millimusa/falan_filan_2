@@ -1,0 +1,46 @@
+
+import java.util.Scanner;
+
+public class Ogrenci
+{
+	public String isim;
+	public String soyisim;
+	public String tel;
+	public int no;
+	
+	Scanner girdi = new Scanner(System.in);
+	
+	public Ogrenci()
+	{
+		
+	}
+	
+	public Ogrenci(String i, String s, String t, int n)
+	{
+		this.isim = i;
+		this.soyisim = s;
+		this.tel = t;
+		this.no = n;
+	}
+	
+	public void BilgiAl()
+	{
+		System.out.println("Ogrencinin ismini girin: ");
+		this.isim = girdi.next();
+		System.out.println("Ogrencinin soyismini girin: ");
+		this.soyisim = girdi.next();
+		System.out.println("Ogrencinin tel nosunu girin: ");
+		this.tel = girdi.next();
+		System.out.println("Ogrencinin nosunu girin: ");
+		this.no = girdi.nextInt();
+	}
+	
+	
+	public void FormatliYazdir()
+	{
+		System.out.println("Ogrencinin ismi: " + this.isim
+				+ "\nOgrencinin soyismi: " + this.soyisim
+				+ "\nOgrencinin telfon nosu: " + this.tel
+				+ "\nOgrencinin nosu: " + this.no);
+	}
+}
