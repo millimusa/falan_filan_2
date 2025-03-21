@@ -1,0 +1,20 @@
+public class AnaSinif {
+
+	public static void main(String[] args)
+	{
+		Ogrenci ogr1 = new Ogrenci();
+		Ogrenci ogr2 = new Ogrenci("Kursat", "Turk", "555 720 1010", 1071);
+		
+		ogr1.BilgiAl();
+		
+		ogr1.setIsim("Ahmet");
+		
+		System.out.println(ogr1.getIsim());
+		
+		ogr1.FormatliYazdir();
+		ogr2.FormatliYazdir();
+		
+		
+	}
+
+}
