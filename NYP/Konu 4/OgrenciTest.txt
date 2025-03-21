@@ -1,0 +1,41 @@
+
+import java.util.Scanner;
+
+public class OgrenciTest {
+
+	public static void main(String[] args) {
+		
+		Ogrenci ogr1 = new Ogrenci("Ahmet Yildiz", 1071);
+		Ogrenci ogr2 = new Ogrenci();
+		Ogrenci ogr3 = new Ogrenci("Kadir Mert Veli", 3716, 23, 40);
+		
+		Scanner ahmet = new Scanner(System.in);
+		System.out.println("Kullanici Ismini Giriniz:");
+		String xyz = ahmet.nextLine();
+		
+		System.out.println("Kullanici yasini Giriniz:");
+		int  xyzk =ahmet.nextInt();
+		ogr1.setOgrenciIsim(xyz);
+		ogr1.setOgrenciYas(xyzk);
+		
+		
+		ogr2.setOgrenciIsim("Ayse Turk");
+		ogr2.setOgrenciNo(1923);
+		ogr2.setOgrenciYas(22);
+		ogr2.setOgrenciNot(90);
+		
+		
+		
+		ogr1.OgrenciBilgiYazdir();
+		ogr2.OgrenciBilgiYazdir();
+		ogr3.OgrenciBilgiYazdir();
+		
+		ogr3.setOgrenciYas(25);
+		
+		
+		
+		
+
+	}
+
+}

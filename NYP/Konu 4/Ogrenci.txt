@@ -1,0 +1,78 @@
+
+public class Ogrenci {
+	
+	private String ogrenciIsim;
+	private int ogrenciNo;
+	private int ogrenciYas;
+	private int ogrenciNot;
+	
+	
+	public Ogrenci()
+	{
+		
+	}
+	
+	public Ogrenci(String isim, int no)
+	{
+		this.ogrenciIsim = isim;
+		ogrenciNo = no;
+	}
+	
+	public Ogrenci(String isim, int no, int yas, int not)
+	{
+		ogrenciIsim = isim;
+		ogrenciNo = no;
+		ogrenciYas = yas;
+		ogrenciNot = not;
+	}
+	
+	
+	public void setOgrenciIsim(String isim)
+	{
+		this.ogrenciIsim = isim;
+	}
+	
+	public String getOgrenciIsim()
+	{
+		return ogrenciIsim;
+	}
+	
+	public void setOgrenciNo(int no)
+	{
+		this.ogrenciNo = no;
+	}
+	
+	public int getOgrenciNo()
+	{
+		return ogrenciNo;
+	}
+	
+	public void setOgrenciYas(int yas)
+	{
+		this.ogrenciYas = yas;
+	}
+	
+	public int getOgrenciYas()
+	{
+		return ogrenciYas;
+	}
+	
+	public void setOgrenciNot(int not)
+	{
+		this.ogrenciNot = not;
+	}
+	
+	public int getOgrenciNot()
+	{
+		return this.ogrenciNot;
+	}
+	
+	public void OgrenciBilgiYazdir()
+	{
+		System.out.println("Ogrencinin Ismi: " + getOgrenciIsim());
+		System.out.println("Ogrencinin Numarasi: " + ogrenciNo);
+		System.out.println("Ogrencinin Yasi: " + this.ogrenciYas);
+		System.out.println("Ogrencinin Notu: " + ogrenciNot);
+	}
+
+}
